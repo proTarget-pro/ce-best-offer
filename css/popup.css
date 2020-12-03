@@ -1,0 +1,112 @@
+.warningWindow{
+    width: 260px;
+    height: 260px;
+    background-color: #fff;
+    border-radius: 14px;
+    border: 1px solid black;
+}
+.signin_check{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.userLogout{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.userProfile{
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    background: url('https://home.misabel.ai/shops/plugin/image/userLogout.svg');
+}
+.googleButton_wrapper{
+    display: flex;
+    justify-content: center;
+}
+.googleButton{
+    width: 208px;
+    height: 36px;
+    border: 2px solid #203A6A;
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.googleButton .googleIcon{
+    width: 15px;
+    height: 15px;
+    background: url('https://home.misabel.ai/shops/plugin/image/googleIcon.svg');
+    margin-right: 8px;
+}
+.googleButton span{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #203A6A;
+}
+.pol_check{
+    margin-bottom: 35px;
+}
+.pol_checkmark{
+    display: flex;
+    align-items: center;
+    margin: 0px 25px;
+}
+.pol_checkbox{
+    display: none;
+}
+.pol_checkfake{
+    display: inline-block;
+    width: 40px;
+    height: 21px;
+    border: 1px solid #203A6A;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-right: 20px;
+    position: relative;
+}
+.pol_checkfake::before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    opacity: 0;
+    transition: 0.2s;
+    width: 15px;
+    height: 13px;
+    background: url('https://home.misabel.ai/shops/plugin/image/checkboxgreen.svg');
+    background-repeat: no-repeat;
+}
+.pol_checkbox:checked + .pol_checkfake::before{
+    opacity: 1;
+}
+
+.privatePolitic{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #203A6A;
+}
+
+.privatePolitic span a{
+    color: #67AD48;
+    text-decoration: none;
+}

@@ -1,0 +1,67 @@
+{
+  "name": "Best Offer",
+  "version": "3.6.1",
+  "description": "Find the best price and options for you product.",
+  "permissions": [
+    "cookies",
+    "identity",
+    "https://*.misabel.ai/*",
+    "https://*.google.com/*"
+  ],
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsc+ChgFLgRDXdl/NQYyRkI3vW38V9waWbv5G1IA9O32QLjmiATAHFgjDCtzNEX6ORm9DhH0zx/XNfdLYqffq8p0U959Ua2JKhRIclp+b7ecY5KWI4GQt+huBV61ToknoKrECVCZOWbiDvnGIV7AkJoI3ZHY0jHQyJPxp9dFb/obpaIMqAtYVxVx7KIZTybxv+EIAxc1IvDO24mHrl/v9Ce3WfX5ZEG4mHvcLhJiXujMXurkg5zU8mM/OE1I/xql/oQSXp9eyx8S+qGQktBGXu2aV7HQMd1BoXwxwTd4JrNk4mQksFXrc0ItLci7taYf4Zzkdl6vnsjhvolJOxB3WCQIDAQAB",
+  "web_accessible_resources": [
+    "images/*.png",
+    "images/*.svg",
+    "content.html",
+    "css/myStyles.css"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.amazon.com/*/dp/*",
+        "https://*.amazon.com/dp/*",
+        "https://*.wayfair.com/*/pdp/*",
+        "https://*.comfortmarket.com/*.html",
+        "https://*.walmart.com/ip/*",
+        "https://*.bedbathandbeyond.com/store/product/*/*",
+        "https://*.homedepot.com/p/*",
+        "https://*.lowes.com/pd/*",
+        "https://*.target.com/p/*",
+        "https://*.kohls.com/product/*",
+        "https://*.macys.com/shop/product/*",
+        "https://*.gilt.com/boutique/product/*/*",
+        "https://*.jcpenney.com/p/*/*",
+        "https://*.bestbuy.com/site/*.p*",
+        "https://*.overstock.com/*/product.html*",
+        "https://*.bhphotovideo.com/*/product/*",
+        "https://*.newegg.com/p/*",
+        "https://*.newegg.com/*/p/*",
+        "https://*.houzz.com/products/*~*"
+      ],
+      "css": [
+        "css/myStyles.css"
+      ],
+      "js": [
+        "content.js",
+        "chartjs/moment.js",
+        "chartjs/Chart.min.js",
+        "c3/c3.min.js",
+        "d3/d3-5.8.2.min.js"
+      ]
+    }
+  ],
+  "content_security_policy": "script-src 'self' https://apis.google.com/js/api.js; object-src 'self'",
+  "icons": {
+    "16": "images/logo.png",
+    "32": "images/logo.png",
+    "48": "images/logo.png",
+    "128": "images/logo.png"
+  },
+  "manifest_version": 2
+}

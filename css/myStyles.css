@@ -1,0 +1,1594 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body .myBar{
+  font-style: normal !important;
+  font-weight: normal !important;
+  color: #fff !important;
+  font-size: 18px !important;
+  line-height: 21px;
+  font-family: 'Open Sans', sans-serif;
+}
+*{
+  box-sizing: border-box;
+  box-sizing: content-box;
+}
+.tooltipPlugin{
+  margin-right: 5px;
+}
+.activePlugin{
+  display: block !important;
+}
+.pluginMin{
+  width: 52px;
+  height: 60px;
+  position: absolute;
+  top: 185px;
+  right: 0;
+  z-index: 999;
+  position: fixed;
+  border-right: 2px solid #E872A8;
+  display: flex;
+  display: none;
+  background-color: #203A6A;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  cursor: pointer;
+}
+.pluginMinLogo{
+  width: 100%;
+  height: 100%;
+  background: url('https://home.misabel.ai/shops/plugin/image/logo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #203A6A;
+  background-size: 88%;
+  position: relative;
+}
+.pluginArrow{
+  width: 45%;
+  height: 100%;
+  position: relative;
+  background: url('https://home.misabel.ai/shops/plugin/image/arrowLeft.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 555;
+}
+.offersItem{
+  display: none;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -10px;
+  right: 13px;
+  background-color: #E872A8;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 13px;
+}
+
+.hide{
+  display: none !important;
+}
+.hidePluginBtn{
+  width: 100%;
+  height: 100%;
+}
+.myBar {
+    top: 0px;
+    text-align: center;
+    font-size: 17px;
+    color: #f1f1f1;
+    background-color: #1E345F;
+    width: 100%;
+    display: flex;
+    z-index: 2147483646;
+    position: sticky;
+    height: 65px;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 9000;
+}
+.wrapperPhone{
+  top: auto;
+  background-color: #1E345F;
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.phoneArrow{
+  display: none;
+  background: url('https://home.misabel.ai/shops/plugin/image/phoneArrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 79px;
+  height: 14px;
+  cursor: pointer;
+}
+.phoneArrowActive {
+  background: url('https://home.misabel.ai/shops/plugin/image/phoneArrowUp.svg');
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.mainWrapper{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+ }
+.innerWrapper{
+   display: flex;
+   width: 100%;
+   top: 65px;
+   text-align: center;
+   font-size: 17px;
+   background-color: #1E345F;
+   z-index: 9998;
+   position: fixed;
+   box-sizing: content-box;
+   flex-direction: column;
+ }
+.blockLogo{
+  background-color: #1E345F;
+  display: flex;
+  width: 20%;
+  align-items: center;
+  height: 65px;
+}
+.blockLogoActive{
+  width: 20%;
+}
+.logoActive{
+  justify-content: center;
+}
+.LogoWrapper{
+  width: 73.2%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.logoBlockImg{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logoBlockImgActive{
+  justify-content: flex-end;
+}
+.logoMisabel{
+  width: 50px;
+  height: 50px;
+  background: url('https://home.misabel.ai/shops/plugin/image/logo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.logoText{
+  display: flex;
+  align-items: center;
+}
+.logoTextActive{
+  width: 50%;
+}
+.wrapperMenu{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.offers{
+  display: block;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  display: none;
+}
+.topOffers{
+  display: flex;
+  align-items: center;
+}
+.showAllWrapper{
+  display: none;
+  margin-left: 20px;
+  cursor: pointer;
+  width: auto;
+}
+.showAllWrapper:hover .showAlltext{
+  color: #E872A8;
+}
+.showAllWrapper:hover .showAll{
+  width: 25px;
+  height: 25px;
+  background: url('https://home.misabel.ai/shops/plugin/image/arrowDownHover.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 5px;
+}
+.showAllWrapper:hover .showAllActive{
+  width: 25px;
+  height: 25px;
+  background: url('https://home.misabel.ai/shops/plugin/image/arrowUpHover.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+.showAlltext{
+  font-size: 18px !important;
+  color: #fff;
+  align-self: center;
+  font-family: 'Open Sans', sans-serif !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  line-height: 21px !important;
+}
+.showhiden{
+  display: none;
+}
+.topMenuWrapper{
+  width: 19%;
+  display: none;
+  align-items: center;
+  background-color: #1E345F;
+  height: 65px;
+}
+.topMenu{
+  display: flex;
+  align-items: center;
+}
+.innerBar {
+  text-align: center;
+  font-size: 17px;
+  color: #f1f1f1;
+  background-color: #1E345F;
+  width: 100%;
+  display: none;
+  z-index: 2147483646;
+  position: fixed;
+  height: auto;
+  box-sizing: content-box;
+  flex-wrap: wrap;
+}
+.innerContent{
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  margin-left: 14.5%;
+}
+.wrapperPhoneUp{
+  top: auto;
+  background-color: #1E345F;
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.phoneArrowUp{
+  width: 79px;
+  height: 14px;
+  background: url('https://home.misabel.ai/shops/plugin/image/phoneArrowUp.svg');
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.activePlugin{
+  display: block !important;
+  display: flex !important;
+}
+.canvasBar {
+  top: 70px;
+  text-align: center;
+  font-size: 17px;
+  color: #f1f1f1;
+  background-color: #1E345F;
+  width: 100%;
+  display: none;
+  z-index: 2147483646;
+  position: sticky;
+  height: auto;
+  justify-content: center;
+}
+.canvasBar .active{
+  display: block;
+  display: flex;
+}
+.switchBtn{
+  margin-top: 10px;
+}
+.blockSwitch{
+  display: flex;
+  flex-direction: column;
+}
+.switchBtn button{
+  width: 100px;
+  height: 33px;
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-bottom: 5px;
+}
+canvas{
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #4A4A4A;
+}
+.sellerLink {
+    text-decoration: none;
+    padding: 0 20px;
+}
+.sellerLink:hover{
+  background-color: #3D5480;
+  text-decoration: none;
+}
+.sellerName {
+    text-align: center;
+    display: flex;
+    height: 65px;
+    width: auto;
+}
+.likeOffers{
+    display: none !important;
+    cursor: pointer;
+    width: 25px;
+    height: 20px;
+    background: url('https://home.misabel.ai/shops/plugin/image/like.svg');
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.likeOffers:hover{
+    background: url('https://home.misabel.ai/shops/plugin/image/likeActive.svg');
+    background-repeat: no-repeat;
+}
+.likeOffersActive{
+  background: url('https://home.misabel.ai/shops/plugin/image/likeActive.svg');
+  background-repeat: no-repeat;
+}
+.showAll {
+    width: 25px;
+    height: 25px;
+    background: url('https://home.misabel.ai/shops/plugin/image/arrowDown.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-self: center;
+    margin-left: 5px;
+}
+.showAllActive {
+  background: url('https://home.misabel.ai/shops/plugin/image/arrowUp.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.priceHistory {
+    cursor: pointer;
+    width: 22px;
+    height: 20px;
+    background-image: url('https://home.misabel.ai/shops/plugin/image/diagram.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.priceHistory:hover{
+  background-image: url('https://home.misabel.ai/shops/plugin/image/diagramActive.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.priceHistoryActive{
+  background-image: url('https://home.misabel.ai/shops/plugin/image/diagramActive.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.settings{
+    display: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-image: url('https://home.misabel.ai/shops/plugin/image/settings.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.settings:hover{
+  background-image: url('https://home.misabel.ai/shops/plugin/image/settingsActive.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.settingsActive{
+  background-image: url('https://home.misabel.ai/shops/plugin/image/settingsActive.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hidePlugin{
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  top: 4px;
+  right: 4px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.closeImg{
+  width: 12px;
+  height: 12px;
+  background-image: url('https://home.misabel.ai/shops/plugin/image/closeImg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hidePlugin:hover .closeImg{
+  background-image: url('https://home.misabel.ai/shops/plugin/image/closeHover.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.imageWrapper{
+  display: flex;
+  height: 28px;
+  width: max-content;
+  align-self: center;
+  justify-content: flex-start;
+  margin-right: 13px;
+  width: auto;
+  height: auto;
+}
+.imageWrapper .logo{
+  width: auto;
+  height: auto;
+  align-self: center;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.sellerName>.price {
+    text-decoration: none !important;
+    font-size: 24px !important;
+    color: #E872A8 !important;
+    align-self: center;
+    font-family: 'Open Sans', sans-serif !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    line-height: 28px !important;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.loadingWrap{
+  display: flex;
+  align-items: center;
+}
+.messageNotFoundWrap p{
+  font-style: normal !important;
+  font-weight: normal !important;
+  color: #fff !important;
+  font-size: 18px !important;
+  line-height: 21px;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+}
+.messageNotFoundWrap a{
+  margin-left: 10px;
+}
+.messageNotFound{
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 0;
+  border: none !important;
+}
+.message{
+  font-style: normal !important;
+  font-weight: normal !important;
+  color: #fff !important;
+  font-size: 18px !important;
+  line-height: 21px;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 0;
+  display: block !important;
+  border: none !important;
+}
+/* .failRequest::before, .failRequest::after {
+  content: ''; 
+  width: 20px !important;
+  height: 20px !important;
+  position: absolute;
+  top: 5px; left: -20px;
+  border: 10px solid transparent;
+  border-right: 10px solid white;
+ }
+ .failRequest::after {
+  border-right: 10px solid #1E345F;
+  top: 5px; left: -18px;
+} */
+.imgSadFace{
+  width: 28px;
+  height: 28px;
+  background-image: url('https://home.misabel.ai/shops/plugin/image/sadFace.svg');
+  background-repeat: no-repeat;
+  display: none;
+}
+.imgSadFaceActive{
+  display: block;
+}
+.failRequest{
+  border: 1px solid #fff !important;
+  border-radius: 5px;
+  padding: 4px;
+  margin-left: 11px;
+}
+.chartWrapper{
+  width: 735px;
+  height: 280px;
+}
+.chart {
+  width: 735px;
+  height: 280px;
+  background-color: #fff;
+  color: black;
+}
+canvas{
+  background-color: #fff !important;
+}
+.graph{
+  padding-bottom: 30px;
+}
+.graphBtn{
+  display: none !important;
+  width: 735px;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+  margin: 25px 0;
+}
+.graphButton{
+  padding: 5px 10px;
+  border: 1px solid #7097E2;
+  border-radius: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #7097E2;
+  margin: 0 3px;
+  width: 117px;
+}
+.btnActive{
+  border: 1px solid red;
+}
+.loadingBlock{
+  display: none;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50%,
+  75% {
+    transform: scale(1);
+  }
+  78%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.containerPreload {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 20px;
+  width: auto;
+}
+
+.circle {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle:before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: scale 1s infinite cubic-bezier(0, 0, 0.49, 1.02);
+}
+
+.circle-1 {
+  background-color: #fff;
+}
+.circle-1:before {
+  background-color: #FC57FF;
+  animation-delay: 300ms;
+}
+
+.circle-2 {
+  background-color: #fff;
+}
+.circle-2:before {
+  background-color: #FC57FF;
+  animation-delay: 600ms;
+}
+
+.circle-3 {
+  background-color: #fff;
+}
+.circle-3:before {
+  background-color: #FC57FF;
+  animation-delay: 900ms;
+}
+
+.subscribeBlock{
+  margin-top: 5px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribeImg{
+  width: 100%;
+  height: 100%;
+  background-image: url('https://home.misabel.ai/shops/plugin/image/subscribe.svg');
+}
+
+.g-signin2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 20px;
+  width: 25px;
+  height: 24px;
+  background-image: url('https://home.misabel.ai/shops/plugin/image/signinDesktop.svg');
+  margin-left: 5px;
+}
+.g-signin2:hover{
+  background-image: url('https://home.misabel.ai/shops/plugin/image/signinHover.svg');
+}
+.g-signin2active{
+  background-image: url('https://home.misabel.ai/shops/plugin/image/signinHover.svg');
+}
+
+.g-signout2{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.styles__HeaderContainer-RC__sc-1udxeud-1 {
+  position: initial !important;
+}
+
+/* .top-0 {
+  top: auto !important;
+} */
+
+#sign-in-or-out-button{
+  margin-left: 25px
+}
+#revoke-access-button{
+  display: none; 
+  margin-left: 25px
+}
+#auth-status{
+  display: inline; 
+  padding-left: 25px
+}
+
+#responseImg{
+  display: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#responseImg-mob{
+  display: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.oauthWindow{
+  display: none;
+  width: 260px;
+  height: 260px;
+  border-radius: 14px;
+  position: fixed;
+  top: 10px;
+  right: 210px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background-color: #fff;
+}
+
+.oauthclose{
+  width: auto;
+  height: auto;
+}
+.responsePicture{
+  margin-top: 30px;
+  width: 60px;
+  height: 60px;
+}
+#responsePictureImg{
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.responseName{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #203A6A;
+  width: 80%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(32, 58, 106, 0.5);
+  text-align: center;
+}
+
+.oauthClosebtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  border: 1px solid #203A6A;
+  border-radius: 4px;
+  color: #203A6A;
+  padding: 7px 12px;
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+.modal-overlay{
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+}
+.modal-overlay2{
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+}
+.modal-overlay3{
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+}
+.modal-overlay4{
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.warning{
+  width: 23px;
+  height: 20px;
+  background-image: url('https://home.misabel.ai/shops/plugin/image/warning.svg');
+  cursor: pointer;
+}
+.warning:hover{
+  background-image: url('https://home.misabel.ai/shops/plugin/image/warningHover.svg');
+}
+.warningActive{
+  background-image: url('https://home.misabel.ai/shops/plugin/image/warningHover.svg');
+}
+.chart-container{
+  position: relative;
+  width: 728px;
+  height: 300px;
+}
+.warningWindow{
+  display: none;
+  width: 260px;
+  height: 320px;
+  background-color: #fff;
+  border-radius: 14px;
+  position: absolute;
+  top: 55px;
+  right: 120px;
+  z-index: 99999;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.warningWindow button{
+  padding: 0 !important;
+}
+.check{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.report{
+  color: #203A6A;
+  margin-top: 46px;
+  margin-left: 26px;
+  font-weight: 700;
+}
+.wrapperWarningForm{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container_wrapper{
+  margin: 20px 28px 20px 28px; 
+}
+.warningСontainer{
+  font-family: 'Roboto';
+  font-style: normal;
+  
+  font-size: 18px;
+  line-height: 21px;
+  color: #203A6A;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.warningСontainer span{
+  font-weight: 400 !important;
+}
+.warningСontainer:nth-child(2){
+  position: relative;
+}
+.checkmark{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.warningСontainer:nth-child(2)::after{
+  position: absolute;
+  content: '';
+  width: 93%;
+  height: 1px;
+  background-color: black;
+  top: 0;
+  right: 0;
+}
+.warningСontainer:nth-child(2)::before{
+  position: absolute;
+  content: '';
+  width: 93%;
+  height: 1px;
+  background-color: black;
+  bottom: 0;
+  right: 0;
+}
+.checkboxWarning{
+  display: none;
+}
+.checkfake{
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  border: 1px solid #203A6A;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 20px;
+  position: relative;
+}
+.checkfake::before{
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  opacity: 0;
+  transition: 0.2s;
+  width: 15px;
+  height: 13px;
+  background: url('https://home.misabel.ai/shops/plugin/image/check.svg');
+  background-repeat: no-repeat;
+}
+.checkboxWarning:checked + .checkfake::before{
+  opacity: 1;
+}
+.checkboxWarning:checked .Submit{
+  margin-right: 20px;
+  background-color: #fff;
+  color: #67AD48;
+  border: 1px solid #67AD48;
+}
+
+.btnWarning{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 26px;
+}
+.btnWarning button{
+  width: 89px;
+  height: 36px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnWarning button:disabled{
+  margin-right: 20px;
+  background-color: #fff;
+  color: #203A6A;
+  border: 1px solid #203A6A;
+}
+
+.SubmitActive:hover{
+  margin-right: 20px;
+  background-color: #67AD48;
+  color: #fff;
+  border: 1px solid #67AD48;
+}
+.SubmitActive{
+  margin-right: 20px;
+  background-color: #fff;
+  color: #67AD48;
+  border: 1px solid #67AD48;
+}
+.btnWarning .Cancel{
+  background-color: #fff;
+  color: #E872A8;
+  border: 1px solid #E872A8;
+}
+.Cancel:hover{
+  background-color: #E872A8;
+  color: #fff;
+  border: 1px solid #E872A8;
+}
+.thanks{
+  display: none;
+  background-color: #67AD48;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  padding: 3px 5px;
+  border-radius: 4px;
+  z-index: 9999;
+}
+.thanks::before{
+  content: ''; 
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: -10px; left: 20%;
+  border: 5px solid transparent;
+  border-bottom: 5px solid #67AD48;
+}
+.messageAncor{
+  display: none;
+  margin: 0 0 0 8px;
+}
+.messageAncor a{
+  font-size: 18px;
+}
+.mobileBurger{
+  display: none;
+}
+.mobileMenu{
+  display: none;
+}
+.mobileMenu #g-signin2-mob{
+  display: none;
+}
+.mobileMenu .priceHistory{
+  display: none;
+}
+.mobileMenu .warning{
+  display: none;
+}
+.mobileMenu #g-signout2-mob{
+  display: none;
+}
+
+.signinWindow{
+  top: 10px;
+  right: 210px;
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.signin_check{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.userLogout{
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.userProfile{
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  /* background-position: top; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  background: url('https://home.misabel.ai/shops/plugin/image/userLogout.svg');
+  background-position: inherit;
+
+}
+.googleButton_wrapper{
+  display: flex;
+  justify-content: center;
+}
+.googleButton{
+  width: 208px;
+  height: 36px;
+  border: 2px solid #203A6A;
+  background-color: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+.googleButton_wrapper button:disabled{
+  border: 2px solid #C4C4C4;
+}
+.googleButton_wrapper button:disabled span{
+  color:#C4C4C4;
+}
+.googleButton_wrapper button:disabled .googleIcon{
+  opacity: 0.4;
+}
+.googleButton_wrapper button:disabled:hover::after { 
+  content: attr(data-title);
+  position: absolute;
+  left: 0; right: 0; top: 40px;
+  z-index: 1; 
+  background: #67AD48;
+  color: #fff;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  line-height: 12px;
+  padding: 5px 10px;
+  border-radius: 4px;
+ }
+
+ .googleButton_wrapper button:disabled:hover::before { 
+  content: '';
+  position: absolute; /* Абсолютное позиционирование */
+  left: 20px; bottom: -20px; /* Положение треугольника */
+  border: 20px solid transparent; /* Прозрачные границы */
+  border-bottom: 20px solid #67AD48; /* Добавляем треугольник */
+ } 
+
+.googleButton .googleIcon{
+  width: 15px;
+  height: 15px;
+  background: url('https://home.misabel.ai/shops/plugin/image/googleIcon.svg');
+  margin-right: 8px;
+}
+.googleButton span{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #203A6A;
+}
+.pol_check{
+  margin-bottom: 35px;
+}
+.pol_checkmark{
+  display: flex;
+  align-items: center;
+  margin: 0px 25px;
+}
+.pol_checkbox{
+  display: none;
+}
+.pol_checkfake{
+  display: inline-block;
+  width: 40px;
+  height: 21px;
+  border: 1px solid #203A6A;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 20px;
+  position: relative;
+}
+.pol_checkfake::before{
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  opacity: 0;
+  transition: 0.2s;
+  width: 15px;
+  height: 13px;
+  background: url('https://home.misabel.ai/shops/plugin/image/checkboxgreen.svg');
+  background-repeat: no-repeat;
+}
+.pol_checkbox:checked + .pol_checkfake::before{
+  opacity: 1;
+}
+
+.privatePolitic{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #203A6A;
+}
+
+.privatePolitic span a{
+  color: #67AD48;
+  text-decoration: none;
+}
+
+
+/* media */
+
+@media(max-width: 2560px) {
+  .topOffers .sellerLink:nth-child(5){
+    display: none;
+  }
+  .topOffers .sellerLink:nth-child(6){
+    display: none;
+  }
+  .topOffers .sellerLink:nth-child(7){
+    display: none;
+  }
+  .topOffers .sellerLink:nth-child(8){
+    display: none;
+  }
+  .topOffers .sellerLink:nth-child(9){
+    display: none;
+  }
+  .topOffers .sellerLink:nth-child(10){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(1){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(2){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(3){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(4){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(5){
+    display: block;
+  }
+  .innerContent .sellerLink:nth-child(6){
+    display: block;
+  }
+  .innerContent .sellerLink:nth-child(7){
+    display: block;
+  }
+  .innerContent .sellerLink:nth-child(8){
+    display: block;
+  }
+  .innerContent .sellerLink:nth-child(9){
+    display: block;
+  }
+  .innerContent .sellerLink:nth-child(10){
+    display: block;
+  }
+  .innerContent{
+    margin-left: 14.5%;
+  }
+  .innerWrapper{
+    top: 65px;
+  }
+}
+
+@media(max-width: 1920px) {
+  .topOffers .sellerLink:nth-child(5){
+    display: none;
+  }
+  .topOffers .sellerLink:nth-child(6){
+    display: none;
+  }
+  .topOffers .sellerLink:nth-child(7){
+    display: none;
+  }
+  .topOffers .sellerLink:nth-child(8){
+    display: none;
+  }
+  .topOffers .sellerLink:nth-child(9){
+    display: none;
+  }
+  .topOffers .sellerLink:nth-child(10){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(1){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(2){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(3){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(4){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(5){
+    display: block;
+  }
+  .innerContent .sellerLink:nth-child(6){
+    display: block;
+  }
+  .innerContent .sellerLink:nth-child(7){
+    display: block;
+  }
+  .innerContent .sellerLink:nth-child(8){
+    display: block;
+  }
+  .innerContent .sellerLink:nth-child(9){
+    display: block;
+  }
+  .innerContent .sellerLink:nth-child(10){
+    display: block;
+  }
+  .innerContent{
+    margin-left: 14.5%;
+  }
+  .innerWrapper{
+    top: 65px;
+  }
+}
+
+@media(max-width: 1440px) {
+  .topOffers .sellerLink:nth-child(4){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(1){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(2){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(3){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(4){
+    display: block;
+  }
+  .wrapperMenu{
+    width: 63%;
+  }
+  .innerContent{
+    margin-left: 21%;
+  }
+  .arr4{
+    display: flex !important;
+  }
+  .blockLogo{
+    width: 21%;
+  }
+  .topMenuWrapper{
+    width: 16%;
+  }
+  .innerWrapper{
+    top: 65px;
+  }
+}
+
+@media(max-width: 1288px) {
+  .topOffers .sellerLink:nth-child(3){
+    display: none;
+  }
+  .topOffers .sellerLink:nth-child(4){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(1){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(2){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(3){
+    display: block;
+  }
+  .innerContent .sellerLink:nth-child(4){
+    display: block;
+  }
+  .arr3{
+    display: flex !important;
+  }
+  .innerContent{
+    margin-left: 21%;
+  }
+  .innerWrapper{
+    top: 65px;
+  }
+}
+
+@media(max-width: 1124px){
+  .topMenuWrapper{
+    width: 22%;
+  }
+  .innerWrapper{
+    top: 65px;
+  }
+}
+
+@media(max-width: 1085px){
+  .logoBlockImg{
+    width: 30%;
+  }
+  .logoText{
+    display: none;
+  }
+  .blockLogo{
+    width: 10%;
+  }
+  .wrapperMenu{
+    width: 70%;
+  }
+  .innerContent{
+    margin-left: 10%;
+  }
+  .innerWrapper{
+    top: 65px;
+  }
+}
+
+@media(max-width: 950px){
+  .topOffers .sellerLink:nth-child(3){
+    display: block;
+  }
+  .topOffers .sellerLink:nth-child(4){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(1){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(2){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(3){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(4){
+    display: block;
+  }
+  .innerWrapper{
+    top: 72px;
+  }
+  .topMenuWrapper{
+    width: 10%;
+  }
+  .innerContent{
+    margin-left: 16.5% !important;
+  }
+  .blockLogo{
+    width: 10%;
+  }
+  .LogoWrapper{
+    margin: 0 0 0 25px;
+  }
+  .logoText{
+    display: none;
+  }
+  .showAllWrapper{
+    display: none;
+  }
+  .topMenu{
+    display: none;
+  }
+  #responseImg-mob{
+    display: block;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+  }
+  .mobileBurger{
+    display: block;
+    background-image: url(https://home.misabel.ai/shops/plugin/image/menu.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  .priceHistory{
+    display: none;
+  }
+  .likeOffers{
+    display: none;
+  }
+  .settings{
+    display: none;
+  }
+  .wrapperPhone{
+    display: flex;
+  }
+  .innerContent{
+    margin-left: 10%;
+  }
+  .mainBar{
+    height: 85px;
+  }
+  .warning{
+    display: none;
+  }
+  .topMenu .g-signin2{
+    display: none;
+  }
+  .topMenu .g-signout2{
+    display: none;
+  }
+  .showAllWrapper{
+    display: none !important;
+  }
+  .mobileMenu{
+    display: none;
+    position: absolute;
+    width: 140px;
+    height: 58px;
+    border-radius: 4px;
+    top: 60px;
+    right: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  .mobileMenu .priceHistory{
+    display: block;
+    background-image: url('https://home.misabel.ai/shops/plugin/image/diagramMob.svg');
+  }
+  .mobileMenu .priceHistory:hover{
+    background-image: url('https://home.misabel.ai/shops/plugin/image/diagramActive.svg');
+  }
+  .mobileMenu .warning{
+    display: block;
+    background-image: url('https://home.misabel.ai/shops/plugin/image/warningMobile.svg');
+  }
+  .mobileMenu .warning:hover{
+    display: block;
+    background-image: url('https://home.misabel.ai/shops/plugin/image/warningHover.svg');
+  }
+  .mobileMenu .g-signin2{
+    display: block;
+    width: 25px;
+    height: 24px;
+    background-image: url('https://home.misabel.ai/shops/plugin/image/signin.svg');
+    margin-left: 5px;
+  }
+  .mobileMenu .g-signin2:hover{
+    display: block;
+    background-image: url('https://home.misabel.ai/shops/plugin/image/signinHover.svg');
+  }
+  .mobileMenu .g-signout2{
+    margin-left: 5px;
+  }
+}
+
+@media(max-width: 932px){
+  .topOffers .sellerLink:nth-child(3){
+    display: none;
+  }
+  .topOffers .sellerLink:nth-child(4){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(1){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(2){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(3){
+    display: block;
+  }
+  .innerContent .sellerLink:nth-child(4){
+    display: block;
+  }
+}
+
+@media(max-width: 628px){
+  .topOffers .sellerLink:nth-child(2){
+    display: none;
+  }
+  .topOffers .sellerLink:nth-child(3){
+    display: none;
+  }
+  .topOffers .sellerLink:nth-child(4){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(1){
+    display: none;
+  }
+  .innerContent .sellerLink:nth-child(2){
+    display: block;
+  }
+  .innerContent .sellerLink:nth-child(3){
+    display: block;
+  }
+  .innerContent .sellerLink:nth-child(4){
+    display: block;
+  }
+  .topMenuWrapper{
+    width: 12%;
+  }
+}
+
+
+
+
+/* Shops */
+.sticky-nav{
+  top: 65px !important;
+}
+/* #floating-atc-equity{
+  top: 65px !important;
+} */
